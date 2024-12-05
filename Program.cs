@@ -4,7 +4,19 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            const string MsgInput = "Introdueix 20 nombres enters";
+            const int SizeArray = 3;
+
+            int[] arrayValues = new int[SizeArray];
+            int inputNumber;
+
+            Console.WriteLine(MsgInput);
+
+            for (int i = 0; i < SizeArray; i++) {
+                inputNumber = Console.Read();
+                arrayValues[i] = inputNumber;
         }
+
+
     }
 }
